@@ -4,9 +4,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 
-group :developent, :test do
+group :production do
 	gem 'pg'
 end
+
 group :developent, :test do
 	gem 'sqlite3'
 end
