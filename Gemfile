@@ -1,8 +1,7 @@
 source 'https://rubygems.org'
 
-# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
-
+gem 'jquery-rails'
 
 group :production do
 	gem 'pg'
@@ -12,19 +11,14 @@ group :developent, :test do
 	gem 'sqlite3'
 end
 
-gem 'sass-rails', '~> 4.0.0'
-
-gem 'uglifier', '>= 1.3.0'
-
-gem 'coffee-rails', '~> 4.0.0'
-
-gem 'jquery-rails'
-
-gem 'turbolinks'
-
-gem 'jbuilder', '~> 1.2'
+group :assets do
+	gem 'sass-rails', '~> 4.0.0'
+	gem 'uglifier', '>= 1.3.0'
+	gem 'coffee-rails', '~> 4.0.0'
+	gem 'turbolinks'
+	gem 'jbuilder', '~> 1.2'
+end
 
 group :doc do
- 
   gem 'sdoc', require: false
 end
